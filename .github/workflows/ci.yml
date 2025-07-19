@@ -30,7 +30,7 @@ jobs:
 
       - name: Enable Docker daemon
         run: |
-        sudo systemctl start docker || true    
+          sudo systemctl start docker || true    
       
       - name: Build Docker image
         run: |
