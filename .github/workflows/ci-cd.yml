@@ -27,10 +27,6 @@ jobs:
         run: |
           pytest
               
-      - name: Run dummy test
-        run: |
-          echo "No tests yet... Add pytest later"
-        
       - name: Enable Docker daemon
         run: |
           sudo systemctl start docker || true    
