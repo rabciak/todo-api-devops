@@ -31,14 +31,14 @@ jobs:
           source venv/bin/activate
           pytest
               
-            - name: Run dummy test
-              run: |
-                echo "No tests yet... Add pytest later"
-              
-            - name: Enable Docker daemon
-              run: |
-                sudo systemctl start docker || true    
-              
-            - name: Build Docker image
-              run: |
-                  docker build -t todo-api-devops .
+        - name: Run dummy test
+          run: |
+            echo "No tests yet... Add pytest later"
+          
+        - name: Enable Docker daemon
+          run: |
+            sudo systemctl start docker || true    
+          
+        - name: Build Docker image
+          run: |
+              docker build -t todo-api-devops .
